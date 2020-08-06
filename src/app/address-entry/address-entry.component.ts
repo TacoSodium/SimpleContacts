@@ -8,9 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class AddressEntryComponent implements OnInit {
 
   @Input()
-  imgSource: string = "https://upload.wikimedia.org/wikipedia/commons/0/0d/Echinocactus_grusonii_1.jpg"
+  source: string = "https://upload.wikimedia.org/wikipedia/commons/0/0d/Echinocactus_grusonii_1.jpg"
+  @Input()
   title: string = "Title";
+  @Input()
   name: string = "Name";
+  @Input()
   address: string = "Address";
 
   constructor() { }

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 h4 {
@@ -16,10 +17,14 @@ h4 {
     width: 50%;
     height: 180px;
     line-height: .5px;
+    margin-bottom: 10px;
 }
 
 .thumbNail img {
+    border-radius: 50%;
+    vertical-align: middle;
     width: 150px;
+    height: 150px;
 }
 
 .informationBox {
@@ -38,9 +43,4 @@ h4 {
 
 .addressBox {
     margin: 0;
-}
-
-.avatar {
-    border-radius: 360px;
-
 }
