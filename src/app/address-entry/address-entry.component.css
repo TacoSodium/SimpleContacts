@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+h4 {
+    color: lightgray;
+}
+
+.componentBorder {
+    border: 2px solid slategray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    width: 50%;
+    height: 180px;
+    line-height: .5px;
+}
+
+.thumbNail img {
+    width: 150px;
+}
+
+.informationBox {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nameInfo {
+    display: flex;
+}
+
+.nameInfo .name {
+    padding-left: 10px;
+}
+
+.addressBox {
+    margin: 0;
+}
+
+.avatar {
+    border-radius: 360px;
+
+}
