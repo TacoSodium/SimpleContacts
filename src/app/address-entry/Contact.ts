@@ -3,6 +3,7 @@ export class Contact {
     name: string;
     address: string;
     imgUrl: string;
+    deleteButton: Function | null;
 
     constructor(title: string, name: string, address: string, source: string) {
         this.title = title;
