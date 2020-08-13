@@ -2,5 +2,5 @@
 <br>
 <br>
 <div *ngIf="showContacts === true">
-    <app-address-entry *ngFor="let contact of contacts" [contact]=contact></app-address-entry>
+    <app-address-entry *ngFor="let contact of contacts" [contact]=contact (onDelete)="onDelete($event)"></app-address-entry>
 </div>

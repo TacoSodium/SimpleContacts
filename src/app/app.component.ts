@@ -1,6 +1,7 @@
 import { Component, Output } from '@angular/core';
 import { Contact } from './address-entry/Contact';
 import { AddressEntryComponent } from './address-entry/address-entry.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -17,10 +18,17 @@ export class AppComponent {
     new Contact("Dr", "Omar Knight", "20 Queen St, Melbourne", "https://destinationpanama.files.wordpress.com/2008/11/doctorsmall.jpg"),
     new Contact("Mr", "Alex Hyde", "20000A Button Rd, Space", "https://upload.wikimedia.org/wikipedia/commons/0/0d/Echinocactus_grusonii_1.jpg")
   ];
-  
-  deleteContact() {
-    this.contact.deleteButton();
-  }  
+
+  onDelete() {
+    for (let i = 0; i < this.contacts.length; i++) {
+      let selectedContact = this.contacts.indexOf();
+
+      if (this.contacts[i] == selectedContact) {
+        this.contacts.splice(i, 1);
+        break;
+      }
+    }
+  }
 
   onToggleContacts() {
     this.showContacts = !this.showContacts;

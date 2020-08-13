@@ -8,6 +8,7 @@ import { VirtualTimeScheduler } from 'rxjs';
   templateUrl: './address-entry.component.html',
   styleUrls: ['./address-entry.component.css']
 })
+
 export class AddressEntryComponent implements OnInit {
 
   @Input()
@@ -16,11 +17,12 @@ export class AddressEntryComponent implements OnInit {
   @Output()
   onDelete = new EventEmitter<Contact>();
 
-  
-
-
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  deleteContact() {
+    this.onDelete.emit();
   }
 }
