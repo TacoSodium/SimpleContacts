@@ -19,15 +19,9 @@ export class AppComponent {
     new Contact("Mr", "Alex Hyde", "20000A Button Rd, Space", "https://upload.wikimedia.org/wikipedia/commons/0/0d/Echinocactus_grusonii_1.jpg")
   ];
 
-  onDelete() {
-    for (let i = 0; i < this.contacts.length; i++) {
-      let selectedContact = this.contacts.indexOf();
-
-      if (this.contacts[i] == selectedContact) {
-        this.contacts.splice(i, 1);
-        break;
-      }
-    }
+  onDelete(remove: Contact) {
+    let selectedContact = this.contacts.indexOf(remove);
+    this.contacts.splice(selectedContact, 1);
   }
 
   onToggleContacts() {

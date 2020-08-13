@@ -22,7 +22,7 @@ export class AddressEntryComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  deleteContact() {
-    this.onDelete.emit();
+  deleteContact(remove: Contact) {
+    this.onDelete.emit(remove);
   }
 }
