@@ -2,7 +2,7 @@ export class Contact {
     title: string;
     name: string;
     address: string;
-    imgUrl: string = "https://upload.wikimedia.org/wikipedia/commons/0/0d/Echinocactus_grusonii_1.jpg";
+    imgUrl: string;
 
     constructor(title: string, name: string, address: string, source: string) {
         this.title = title;
