@@ -12,16 +12,18 @@ import { ContactListComponent } from './contact-list/contact-list.component'
 
 export class AppComponent {
 
+  default: string = "Hide Contacts";
   showContacts: boolean = true;
-  toggleContacts: string;
+  toggleContacts: string = this.default;
 
   onToggleContacts() {
     this.showContacts = !this.showContacts;
 
-    if (this.showContacts == true) {
-      this.toggleContacts = "Hide Contacts";
-    } else {
+    if (this.showContacts == false) {
       this.toggleContacts = "Show Contacts";
+    } else {
+      this.toggleContacts = this.default;
     }
+
   }
 }
