@@ -1,6 +1,6 @@
-<button (click)="onToggleContacts()">Toggle Contacts</button>
+<button (click)="onToggleContacts()">{{toggleContacts}}</button>
 <br>
 <br>
 <div *ngIf="showContacts === true">
-    <app-address-entry *ngFor="let contact of contacts" [contact]=contact (onDelete)="onDelete($event)"></app-address-entry>
+    <app-contact-list></app-contact-list>
 </div>

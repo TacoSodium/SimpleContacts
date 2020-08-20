@@ -1,0 +1,1 @@
+<app-address-entry *ngFor="let contact of contactService.contacts" [contact]=contact (onDelete)="contactService.onDelete($event)"></app-address-entry>
