@@ -1,1 +1,21 @@
-<p>contact-create works!</p>
+<div class="createContact">
+    <div class="nameInputs">
+        <select name="titleSelect" id="titleSelect" required>
+            <option value="mx">Mx</option>
+            <option value="ms">Ms</option>
+            <option value="mrs">Mrs</option>
+            <option value="mr">Mr</option>
+            <option value="dr">Dr</option>
+        </select>
+
+        <input type="text" class="name" placeholder= "Name" required>
+    </div>
+
+    <div>
+        <input type="text" class="address" placeholder="Address" required>
+    </div>
+
+    <div>
+        <button (click)= addContact()>Submit</button>
+    </div>
+</div>

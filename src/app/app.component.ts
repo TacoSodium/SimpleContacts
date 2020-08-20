@@ -24,6 +24,5 @@ export class AppComponent {
     } else {
       this.toggleContacts = this.default;
     }
-
   }
 }
