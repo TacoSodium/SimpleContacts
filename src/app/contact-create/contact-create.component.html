@@ -9,14 +9,10 @@
             <option value="Dr">Dr</option>
         </select>
 
-        <input type="text" class="name" placeholder= "Name" #name>
+        <input type="text" class="name" placeholder="Name" #name>
     </div>
 
-    <div>
-        <input type="text" class="address" placeholder="Address" #address>
-    </div>
+    <input type="text" class="address" placeholder="Address" #address>
 
-    <div>
-        <button (click)="createContact(title.value, name.value, address.value)">Submit</button>
-    </div>
+    <button (click)="createContact(title.value, name.value, address.value)">Submit</button>
 </div>
