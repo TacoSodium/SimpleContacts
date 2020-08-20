@@ -19,7 +19,7 @@ export class ContactsService {
     this.contacts.splice(selectedContact, 1);
   }
 
-  addContact(add: Contact) {
-    let selectedContact = this.contacts.push(add);
+  addContact(contact: Contact) {
+    this.contacts.push(contact);
   }
 }

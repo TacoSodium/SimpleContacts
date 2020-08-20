@@ -1,22 +1,22 @@
 <div class="createContact">
     <h4>Create a new Contact</h4>
     <div class="nameInputs">
-        <select name="titleSelect" class="titleSelect" required>
-            <option value="mx">Mx</option>
-            <option value="ms">Ms</option>
-            <option value="mrs">Mrs</option>
-            <option value="mr">Mr</option>
-            <option value="dr">Dr</option>
+        <select name="titleSelect" class="titleSelect" #title required>
+            <option value="Mx">Mx</option>
+            <option value="Ms">Ms</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Mr">Mr</option>
+            <option value="Dr">Dr</option>
         </select>
 
-        <input type="text" class="name" placeholder= "Name" required>
+        <input type="text" class="name" placeholder= "Name" #name>
     </div>
 
     <div>
-        <input type="text" class="address" placeholder="Address" required>
+        <input type="text" class="address" placeholder="Address" #address>
     </div>
 
     <div>
-        <button (click)="addContact()">Submit</button>
+        <button (click)="createContact(title.value, name.value, address.value)">Submit</button>
     </div>
 </div>

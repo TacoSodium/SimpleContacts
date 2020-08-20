@@ -6,6 +6,11 @@ h4 {
     text-align: center;
 }
 
+input {
+    height: 10px;
+    opacity: 60%;
+}
+
 .createContact {
     border: 2px solid slategray;
     margin-left: 20px;
