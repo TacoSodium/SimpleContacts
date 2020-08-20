@@ -2,7 +2,7 @@ import { Component, Output, Input } from '@angular/core';
 import { Contact } from './address-entry/Contact';
 import { AddressEntryComponent } from './address-entry/address-entry.component';
 import { Title } from '@angular/platform-browser';
-import { ContactListComponent } from './contact-list/contact-list.component'
+import { ContactListComponent } from './contact-list/contact-list.component';
 
 @Component({
   selector: 'app-root',

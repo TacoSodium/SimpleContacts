@@ -18,4 +18,8 @@ export class ContactsService {
     let selectedContact = this.contacts.indexOf(remove);
     this.contacts.splice(selectedContact, 1);
   }
+
+  addContact(add: Contact) {
+    let selectedContact = this.contacts.push(add);
+  }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
+import {ContactsService} from '../services/contacts.service';
 
 @Component({
   selector: 'app-contact-create',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactCreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(public contactService: ContactsService) { }
 
   ngOnInit(): void {
   }
@@ -15,5 +16,4 @@ export class ContactCreateComponent implements OnInit {
   addContact() {
     
   }
-
 }

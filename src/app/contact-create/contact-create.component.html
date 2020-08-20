@@ -1,6 +1,7 @@
 <div class="createContact">
+    <h4>Create a new Contact</h4>
     <div class="nameInputs">
-        <select name="titleSelect" id="titleSelect" required>
+        <select name="titleSelect" class="titleSelect" required>
             <option value="mx">Mx</option>
             <option value="ms">Ms</option>
             <option value="mrs">Mrs</option>
@@ -16,6 +17,6 @@
     </div>
 
     <div>
-        <button (click)= addContact()>Submit</button>
+        <button (click)="addContact()">Submit</button>
     </div>
 </div>
